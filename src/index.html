@@ -5,12 +5,30 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel=" stylesheet" href="./sass/index.scss" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;900&display=swap"
+    rel="stylesheet">
   <title>Oli Lips</title>
 </head>
 
 <body>
-  <h1>Test</h1>
+  <include src="./partials/header.html"></include>
+  <include src="./partials/hero.html"></include>
+  <include src="./partials/main.html"></include>
+  <include src="./partials/footer.html"></include>
   <script src="index.js" type="module"></script>
+  <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+  <script>
+    addBackToTop({
+      diameter: 55,
+      backgroundColor: '#dddddd',
+      textColor: '#ff6b08',
+      innerHTML:
+        '<svg viewBox="0 0 32 32"><path d="M16 2.667l-10 24.387 0.947 0.947 9.053-4 9.053 4 0.947-0.947-10-24.387z"></path></svg>',
+    });
+  </script>
 </body>
 
 </html>
