@@ -1,6 +1,9 @@
 .header {
     background-color:#FFF;
     box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+    height: 90px;
+    display: flex;
+    align-items: center;
 }
 
 .nav__list{
@@ -10,6 +13,16 @@
 
 .nav__title{
     list-style: none;
+}
+.nav__link{
+    font-size: 22px;
+    font-family: 'Roboto';
+    color: #9b9b9b;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+        color: #ee9f9f;
+    }
 }
 .head__contact{
     display: flex;
